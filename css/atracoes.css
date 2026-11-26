@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: linear-gradient(58deg, #0D1E36 26.79%, #188077 69.9%);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 65, 62);
+    gap: 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 7777777;
+}
+
+.nav_topics {
+    text-decoration: none;
+    color: rgb(163, 178, 205);
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+#logo_valhalla {
+    margin-left: 5%;
+    width: 5%;
+}
+
+#nome {
+    margin-right: 7%;
+    margin-left: -4%;
+    color: #f1a8a8;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.banner {
+    top: 54px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#banner {
+    width: 100%;
+    display: block;
+}
+
+#paraiso,
+#nordico {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #f5bc51, #8f4000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#paraiso {
+    top: 27%;
+    left: 19%;
+    font-size: clamp(3rem, 5vw, 7rem);
+}
+
+#nordico {
+    top: 47%;
+    left: 28.6%;
+    font-size: clamp(4.5rem, 8vw, 11rem);
+}
+
+.introducao {
+    margin: 120px 5% 50px;
+    text-align: center;
+    color: rgb(220, 225, 235);
+}
+
+.introducao h2 {
+    font-size: 35px;
+    color: #f1a8a8;
+    margin-bottom: 15px;
+}
+
+.introducao p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: auto;
+}
+
+.atracoes {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin: 0 5% 5%;
+}
+
+.card-atracao {
+    width: 100%;
+    min-height: 430px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+}
+
+.card-atracao figure {
+    width: 55%;
+    min-height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-atracao figure label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.card-atracao figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card-atracao figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 80px 30px 25px;
+    background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0));
+    color: white;
+}
+
+.card-atracao figure figcaption h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.card-atracao figure figcaption p {
+    font-size: 17px;
+}
+
+.card-atracao figure input {
+    display: none;
+}
+
+.card-atracao figure input:checked + label {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 7777778;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+.card-atracao figure input:checked + label img {
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.card-atracao figure input:checked ~ figcaption {
+    display: none;
+}
+
+.conteudo {
+    width: 45%;
+    padding: 35px;
+    color: #203E3E;
+}
+
+.conteudo h2 {
+    color: #20413E;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.local {
+    color: #188077;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.conteudo h3 {
+    color: #20413E;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.resumo {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.conteudo ul {
+    margin-left: 20px;
+}
+
+.conteudo li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 30px 10% 18px;
+    background-color: rgb(32, 65, 62);
+    color: rgb(163, 178, 205);
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+}
+
+.footer-coluna {
+    width: 50%;
+}
+
+.footer-coluna h2 {
+    color: #f1a8a8;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.footer-coluna p {
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+.direitos {
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(163, 178, 205, .3);
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        gap: 1%;
+        padding: 5px 2%;
+        height: 6%;
+        justify-content: space-around;
+    }
+
+    .nav_topics {
+        font-size: 55%;
+        white-space: nowrap;
+    }
+
+    #logo_valhalla {
+        width: 5%;
+        margin-left: 0;
+    }
+
+    #nome {
+        font-size: 10px;
+        margin: 0 1% 0 0;
+    }
+
+    .banner {
+        top: 35px;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    #paraiso {
+        font-size: 10vw;
+        top: 28%;
+        left: 32%;
+    }
+
+    #nordico {
+        font-size: 14vw;
+        top: 60%;
+        left: 43%;
+    }
+
+    .introducao {
+        margin: 80px 5% 40px;
+    }
+
+    .introducao h2 {
+        font-size: 28px;
+    }
+
+    .introducao p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .atracoes {
+        margin: 0 5% 40px;
+        gap: 30px;
+    }
+
+    .card-atracao {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .card-atracao figure {
+        width: 100%;
+        height: 240px;
+        min-height: 0;
+    }
+
+    .card-atracao figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-atracao figure figcaption {
+        padding: 60px 20px 20px;
+    }
+
+    .card-atracao figure figcaption h2 {
+        font-size: 23px;
+    }
+
+    .card-atracao figure figcaption p {
+        font-size: 15px;
+    }
+
+    .conteudo {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .conteudo h2 {
+        font-size: 25px;
+    }
+
+    .local {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo h3 {
+        font-size: 17px;
+    }
+
+    .resumo {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+
+    .conteudo li {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .card-atracao figure input:checked + label img {
+        max-width: 95vw;
+        max-height: 85vh;
+    }
+
+    footer {
+        margin-top: 45px;
+        padding: 30px 8% 20px;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-coluna {
+        width: 100%;
+    }
+
+    .footer-coluna h2 {
+        font-size: 21px;
+    }
+
+    .footer-coluna p {
+        font-size: 13px;
+    }
+
+    .direitos {
+        font-size: 12px;
+    }
+}

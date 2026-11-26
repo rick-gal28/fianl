@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Paraíso Nórdico: Valhalla</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reserva.css">
+
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/logo valhalla.png" id="logo_valhalla">
+
+            <h1 id="nome">VALHALLA</h1>
+
+            <a href="index.html" class="nav_topics">Home</a>
+            <a href="pousada.html" class="nav_topics">Pousadas</a>
+            <a href="atracoes.html" class="nav_topics">Atrações</a>
+            <a href="fale.html" class="nav_topics">Fale conosco</a>
+            <a href="reserva.html" class="nav_topics">Reservas</a>
+        </nav>
+
+        <figure class="banner">
+            <img src="images/banner" id="banner">
+            <figcaption id="paraiso">PARAÍSO</figcaption>
+            <figcaption id="nordico">NÓRDICO</figcaption>
+        </figure>
+    </header>
+
+    <main class="reserva-main">
+        <section class="reserva-box">
+            <h2>FAÇA SEU ORÇAMENTO</h2>
+
+            <form class="form-reserva">
+
+                <div class="campo">
+                    <label for="nome_cliente">Nome</label>
+                    <input type="text" id="nome_cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data de hospedagem</label>
+                    <input type="date" id="data">
+                </div>
+
+                <div class="campo">
+                    <label>Gênero</label>
+
+                    <div class="opcoes-radio">
+                        <label>
+                            <input type="radio" name="genero" value="Masculino">
+                            Masculino
+                        </label>
+
+                        <label>
+                            <input type="radio" name="genero" value="Feminino">
+                            Feminino
+                        </label>
+
+                        <label>
+                            <input type="radio" name="genero" value="Outro">
+                            Outro
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="suite">Suíte escolhida</label>
+
+                    <select id="suite">
+                        <option value="">Selecione uma hospedagem</option>
+                        <option value="850">Aurora Boreal Lodge - R$ 850,00</option>
+                        <option value="720">Denali North Hotel - R$ 720,00</option>
+                        <option value="930">Glacier Haven Lodge - R$ 930,00</option>
+                        <option value="680">Kenai Fjords Inn - R$ 680,00</option>
+                        <option value="790">Arctic Moon Lodge - R$ 790,00</option>
+                        <option value="610">Northern Peaks Hotel - R$ 610,00</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="diarias">Número de diárias</label>
+                    <input type="number" id="diarias" min="1">
+                </div>
+
+                <div class="campo campo-adicionais">
+                    <label>Adicionais</label>
+
+                    <div class="opcoes-checkbox">
+                        <label>
+                            <input type="checkbox" name="adicionais" value="35">
+                            Café da manhã - R$ 35,00
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="adicionais" value="55">
+                            Almoço - R$ 55,00
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="adicionais" value="65">
+                            Jantar - R$ 65,00
+                        </label>
+                    </div>
+                </div>
+
+                     <div class="campo campo-adicionais">
+                    <label>Guia turístico</label>
+
+                    <div class="opcoes-radio">
+                        <label>
+                            <input type="radio" name="guia" value="120">
+                            Com guia - R$ 120,00 por diária
+                        </label>
+
+                        <label>
+                            <input type="radio" name="guia" value="0" checked>
+                            Sem guia - Gratuito
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo campo-adicionais">
+                    <label>Experiências especiais</label>
+
+                    <div class="opcoes-checkbox">
+                        <label>
+                            <input type="checkbox" id="aurora" value="250">
+                            Passeio para observação da Aurora Boreal - R$ 250,00
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" id="enviar">Enviar</button>
+            
+            </form>
+
+            <div id="orcamento">
+
+                <h3>ORÇAMENTO DA RESERVA</h3>
+
+                <p id="pNome"></p>
+                <p id="pEmail"></p>
+                <p id="pData"></p>
+                <p id="pGenero"></p>
+                <p id="pSuite"></p>
+                <p id="pDiarias"></p>
+                <p id="pAdicionais"></p>
+                <h3 id="pTotal"></h3>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-conteudo">
+            <section class="footer-coluna">
+                <h2>VALHALLA</h2>
+                <p>Um refúgio no coração do Alaska.</p>
+                <p>Localização: Anchorage, Alaska</p>
+                <p>Horário: Segunda a Domingo</p>
+                <p>Atendimento: 08:00 às 22:00</p>
+            </section>
+
+            <section class="footer-coluna">
+                <h2>CONTATO</h2>
+                <p>Email: contato@valhalla.com</p>
+                <p>Reservas: reservas@valhalla.com</p>
+                <p>Telefone: (907) 555-0198</p>
+                <p>WhatsApp: (907) 555-0147</p>
+                <p>Desenvolvido por: Richard A. e Rodrigo H.</p>
+            </section>
+
+        </div>
+        <p class="direitos">© 2026 Valhalla. Todos os direitos reservados.</p>
+
+    </footer>
+</body>
+</html>

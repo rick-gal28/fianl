@@ -1,0 +1,99 @@
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Paraíso Nórdico: Valhalla</title>
+
+    <script rel="stylesheet" href="script.js"></script>
+    <link rel="stylesheet" href="css/fale.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="images/logo valhalla.png" id="logo_valhalla">
+            <h1 id="nome">VALHALLA</h1>
+
+            <a href="index.html" class="nav_topics">Home</a>
+            <a href="pousada.html" class="nav_topics">Pousadas</a>
+            <a href="atracoes.html" class="nav_topics">Atrações</a>
+            <a href="fale.html" class="nav_topics">Fale conosco</a>
+            <a href="reserva.html" class="nav_topics">Reserva</a>
+        </nav>
+
+        <figure class="banner">
+            <img src="images/banner" id="banner">
+
+            <figcaption id="paraiso">PARAÍSO</figcaption>
+            <figcaption id="nordico">NÓRDICO</figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <div class="fale_conosco">
+            <h2>Fale Conosco</h2>
+
+            <p class="texto_inicial">
+                Tem alguma dúvida, sugestão ou deseja entrar em contato conosco?
+                Envie uma mensagem!
+            </p>
+
+            <form>
+                <label for="nome_cliente">Nome</label>
+                <input type="text" id="nome_cliente" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="Digite seu telefone">
+
+                <label for="tipo_mensagem">Tipo de mensagem</label>
+                <select id="tipo_mensagem">
+                    <option value="">Selecione uma opção</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="pergunta">Dúvida</option>
+                    <option value="avaliação">Avaliação</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" maxlength="300" placeholder="Digite sua mensagem"></textarea>
+
+                <p class="contador">0/300 caracteres</p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+
+            <section class="footer-coluna">
+                <h2>VALHALLA</h2>
+                <p>Um refúgio no coração do Alaska.</p>
+                <p>Localização: Anchorage, Alaska</p>
+                <p>Horário: Segunda a Domingo</p>
+                <p>Atendimento: 08:00 às 22:00</p>
+            </section>
+
+            <section class="footer-coluna">
+                <h2>CONTATO</h2>
+                <p>Email: contato@valhalla.com</p>
+                <p>Reservas: reservas@valhalla.com</p>
+                <p>Telefone: (907) 555-0198</p>
+                <p>WhatsApp: (907) 555-0147</p>
+                <p>Desenvolvido por: Richard A. e Rodrigo H.</p>
+            </section>
+
+        </div>
+
+        <p class="direitos">© 2026 Valhalla. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
